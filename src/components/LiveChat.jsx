@@ -1,5 +1,5 @@
 import React from 'react';
-import LiveChatLoaderProvider from 'react-live-chat-loader';
+import { LiveChatLoaderProvider } from 'react-live-chat-loader';
 import { Box } from '@chakra-ui/react';
 
 const LiveChat = () => {
