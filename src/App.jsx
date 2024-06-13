@@ -11,7 +11,12 @@ import ProductPage from "./pages/ProductPage.jsx";
 import Cart from "./pages/Cart.jsx";
 import Checkout from "./pages/Checkout.jsx";
 import CustomerSupport from "./pages/CustomerSupport.jsx";
+import Testimonials from "./pages/Testimonials.jsx";
+import Blog from "./pages/Blog.jsx";
+import LoyaltyProgram from "./pages/LoyaltyProgram.jsx";
+import VideoTutorials from "./pages/VideoTutorials.jsx";
 import Navigation from "./components/Navigation.jsx";
+import LiveChat from "./components/LiveChat.jsx";
 
 function App() {
   return (
@@ -30,7 +35,12 @@ function App() {
         <Route path="/cart" element={<Cart />} />
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/customer-support" element={<CustomerSupport />} />
+        <Route path="/testimonials" element={<Testimonials />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/loyalty-program" element={<LoyaltyProgram />} />
+        <Route path="/video-tutorials" element={<VideoTutorials />} />
       </Routes>
+      <LiveChat />
     </Router>
   );
 }
