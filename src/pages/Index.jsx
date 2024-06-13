@@ -1,4 +1,4 @@
-import { Box, Container, VStack, Text, Button, SimpleGrid, Image, Link } from "@chakra-ui/react";
+import { Box, Container, VStack, Text, Button, SimpleGrid, Image, Link, Heading } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { FaShippingFast, FaTags, FaShoppingCart } from "react-icons/fa";
 
@@ -22,7 +22,7 @@ const featuredProducts = [
 
 const Index = () => {
   return (
-    <Box bg="black" color="white" minH="100vh" py={10}>
+    <Box bg="gray.50" color="gray.800" minH="100vh" py={10}>
       <Container maxW="container.xl">
         <VStack spacing={8} align="stretch">
           {promotionalBanners.map((banner, index) => (
@@ -32,7 +32,7 @@ const Index = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              <Box bg="green.500" p={4} borderRadius="md" display="flex" alignItems="center">
+              <Box bg="brand.500" p={4} borderRadius="md" display="flex" alignItems="center" color="white">
                 <banner.icon size="24px" />
                 <Text ml={2}>{banner.text}</Text>
               </Box>
@@ -46,7 +46,7 @@ const Index = () => {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  <Box bg="yellow.500" p={4} borderRadius="md" textAlign="center">
+                  <Box bg="brand.300" p={4} borderRadius="md" textAlign="center">
                     <Text>{category.name}</Text>
                   </Box>
                 </motion.div>
@@ -54,7 +54,7 @@ const Index = () => {
             ))}
           </SimpleGrid>
 
-          <Text fontSize="2xl" fontWeight="bold">Featured Products</Text>
+          <Heading as="h2" size="lg" fontWeight="bold">Featured Products</Heading>
           <SimpleGrid columns={[1, null, 3]} spacing={4}>
             {featuredProducts.map((product, index) => (
               <motion.div
@@ -62,11 +62,11 @@ const Index = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <Box bg="orange.500" p={4} borderRadius="md" textAlign="center">
+                <Box bg="white" p={4} borderRadius="md" textAlign="center" boxShadow="md">
                   <Image src={product.image} alt={product.name} mb={4} />
                   <Text fontSize="lg" fontWeight="bold">{product.name}</Text>
                   <Text>{product.price}</Text>
-                  <Button leftIcon={<FaShoppingCart />} colorScheme="blackAlpha" variant="solid" mt={2}>
+                  <Button leftIcon={<FaShoppingCart />} colorScheme="brand" variant="solid" mt={2}>
                     Buy Now
                   </Button>
                 </Box>
