@@ -1,6 +1,6 @@
 import { Box, Flex, Link, Image, IconButton, useDisclosure, VStack, HStack } from "@chakra-ui/react";
 import { NavLink } from "react-router-dom";
-import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navigation = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -11,7 +11,7 @@ const Navigation = () => {
         <Image src="/path/to/logo.png" alt="Regend Auto Detailing" boxSize="50px" />
         <IconButton
           display={{ base: "block", md: "none" }}
-          icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
+          icon={isOpen ? <FaTimes /> : <FaBars />}
           aria-label="Toggle Navigation"
           onClick={isOpen ? onClose : onOpen}
           variant="ghost"
