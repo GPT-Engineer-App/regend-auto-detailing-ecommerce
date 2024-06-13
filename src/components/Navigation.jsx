@@ -49,6 +49,27 @@ const Navigation = () => {
           <Link as={NavLink} to="/contact" _hover={{ color: "brand.400", textDecoration: "underline" }}>
             Contact
           </Link>
+          <Link as={NavLink} to="/cart" _hover={{ color: "brand.400", textDecoration: "underline" }}>
+            Cart
+          </Link>
+          <Link as={NavLink} to="/checkout" _hover={{ color: "brand.400", textDecoration: "underline" }}>
+            Checkout
+          </Link>
+          <Link as={NavLink} to="/customer-support" _hover={{ color: "brand.400", textDecoration: "underline" }}>
+            Customer Support
+          </Link>
+          <Link as={NavLink} to="/testimonials" _hover={{ color: "brand.400", textDecoration: "underline" }}>
+            Testimonials
+          </Link>
+          <Link as={NavLink} to="/blog" _hover={{ color: "brand.400", textDecoration: "underline" }}>
+            Blog
+          </Link>
+          <Link as={NavLink} to="/loyalty-program" _hover={{ color: "brand.400", textDecoration: "underline" }}>
+            Loyalty Program
+          </Link>
+          <Link as={NavLink} to="/video-tutorials" _hover={{ color: "brand.400", textDecoration: "underline" }}>
+            Video Tutorials
+          </Link>
         </HStack>
       </Flex>
       {isOpen && (
@@ -81,6 +102,27 @@ const Navigation = () => {
           </Link>
           <Link as={NavLink} to="/contact" _hover={{ color: "brand.400", textDecoration: "underline" }} onClick={onClose}>
             Contact
+          </Link>
+          <Link as={NavLink} to="/cart" _hover={{ color: "brand.400", textDecoration: "underline" }} onClick={onClose}>
+            Cart
+          </Link>
+          <Link as={NavLink} to="/checkout" _hover={{ color: "brand.400", textDecoration: "underline" }} onClick={onClose}>
+            Checkout
+          </Link>
+          <Link as={NavLink} to="/customer-support" _hover={{ color: "brand.400", textDecoration: "underline" }} onClick={onClose}>
+            Customer Support
+          </Link>
+          <Link as={NavLink} to="/testimonials" _hover={{ color: "brand.400", textDecoration: "underline" }} onClick={onClose}>
+            Testimonials
+          </Link>
+          <Link as={NavLink} to="/blog" _hover={{ color: "brand.400", textDecoration: "underline" }} onClick={onClose}>
+            Blog
+          </Link>
+          <Link as={NavLink} to="/loyalty-program" _hover={{ color: "brand.400", textDecoration: "underline" }} onClick={onClose}>
+            Loyalty Program
+          </Link>
+          <Link as={NavLink} to="/video-tutorials" _hover={{ color: "brand.400", textDecoration: "underline" }} onClick={onClose}>
+            Video Tutorials
           </Link>
         </VStack>
       )}
