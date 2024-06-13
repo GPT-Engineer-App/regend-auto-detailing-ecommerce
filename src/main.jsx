@@ -6,15 +6,15 @@ import { Global, css } from "@emotion/react";
 
 const colors = {
   brand: {
-    900: "#1a365d",
-    800: "#153e75",
-    700: "#2a69ac",
-    600: "#3182ce",
-    500: "#4299e1",
-    400: "#63b3ed",
-    300: "#90cdf4",
-    200: "#bee3f8",
-    100: "#ebf8ff",
+    900: "#000000", // Black
+    800: "#1a1a1a", // Dark Gray
+    700: "#333333", // Gray
+    600: "#4d4d4d", // Light Gray
+    500: "#ffffff", // White
+    400: "#ff0000", // Red
+    300: "#ff4d4d", // Light Red
+    200: "#ff9999", // Lighter Red
+    100: "#ffe6e6", // Lightest Red
   },
 };
 
@@ -31,10 +31,12 @@ const GlobalStyles = css`
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
+    background-color: ${colors.brand[900]};
+    color: ${colors.brand[500]};
   }
   a {
     text-decoration: none;
-    color: inherit;
+    color: ${colors.brand[400]};
   }
 `;
 

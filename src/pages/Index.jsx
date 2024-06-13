@@ -22,7 +22,7 @@ const featuredProducts = [
 
 const Index = () => {
   return (
-    <Box bg="gray.50" color="gray.800" minH="100vh" py={10}>
+    <Box bg="brand.900" color="brand.500" minH="100vh" py={10}>
       <Container maxW="container.xl">
         <VStack spacing={8} align="stretch">
           {promotionalBanners.map((banner, index) => (
@@ -32,7 +32,7 @@ const Index = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              <Box bg="brand.500" p={4} borderRadius="md" display="flex" alignItems="center" color="white">
+              <Box bg="brand.400" p={4} borderRadius="md" display="flex" alignItems="center" color="brand.500">
                 <banner.icon size="24px" />
                 <Text ml={2}>{banner.text}</Text>
               </Box>
@@ -46,7 +46,7 @@ const Index = () => {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  <Box bg="brand.300" p={4} borderRadius="md" textAlign="center">
+                  <Box bg="brand.300" p={4} borderRadius="md" textAlign="center" _hover={{ bg: "brand.400", transform: "scale(1.05)" }}>
                     <Text>{category.name}</Text>
                   </Box>
                 </motion.div>
@@ -62,7 +62,7 @@ const Index = () => {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <Box bg="white" p={4} borderRadius="md" textAlign="center" boxShadow="md">
+                <Box bg="brand.500" p={4} borderRadius="md" textAlign="center" boxShadow="md" _hover={{ bg: "brand.300", transform: "scale(1.05)" }}>
                   <Image src={product.image} alt={product.name} mb={4} />
                   <Text fontSize="lg" fontWeight="bold">{product.name}</Text>
                   <Text>{product.price}</Text>
