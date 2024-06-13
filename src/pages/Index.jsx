@@ -20,6 +20,11 @@ const featuredProducts = [
   { name: "Microfiber Towels", price: "$9.99", image: "path/to/image3.jpg" },
 ];
 
+const recentPurchases = [
+  { name: "John Doe", product: "Premium Car Wax" },
+  { name: "Jane Smith", product: "Interior Cleaner" },
+];
+
 const Index = () => {
   return (
     <Box bg="brand.900" color="brand.500" minH="100vh" py={10}>
@@ -71,6 +76,15 @@ const Index = () => {
                   </Button>
                 </Box>
               </motion.div>
+            ))}
+          </SimpleGrid>
+
+          <Heading as="h2" size="lg" fontWeight="bold">Recent Purchases</Heading>
+          <SimpleGrid columns={[1, null, 2]} spacing={4}>
+            {recentPurchases.map((purchase, index) => (
+              <Box key={index} bg="brand.700" p={4} borderRadius="md">
+                <Text>{purchase.name} purchased {purchase.product}</Text>
+              </Box>
             ))}
           </SimpleGrid>
         </VStack>
