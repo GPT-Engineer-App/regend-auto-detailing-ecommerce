@@ -17,6 +17,7 @@ import LoyaltyProgram from "./pages/LoyaltyProgram.jsx";
 import VideoTutorials from "./pages/VideoTutorials.jsx";
 import Navigation from "./components/Navigation.jsx";
 import LiveChat from "./components/LiveChat.jsx";
+import { Box, Button } from "@chakra-ui/react";
 
 function App() {
   return (
@@ -41,6 +42,16 @@ function App() {
         <Route path="/video-tutorials" element={<VideoTutorials />} />
       </Routes>
       <LiveChat />
+      <Box position="fixed" bottom="20px" right="20px" zIndex="1000">
+        <Button
+          colorScheme="red"
+          size="lg"
+          onClick={() => window.location.href='/cart'}
+          _hover={{ bg: "red.600", transform: "scale(1.05)" }}
+        >
+          Cart
+        </Button>
+      </Box>
     </Router>
   );
 }
