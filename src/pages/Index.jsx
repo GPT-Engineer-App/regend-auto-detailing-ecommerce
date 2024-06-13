@@ -1,6 +1,7 @@
 import { Box, Container, VStack, Text, Button, SimpleGrid, Image, Link, Heading } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { FaShippingFast, FaTags, FaShoppingCart } from "react-icons/fa";
+import lotteryBallsImage from '../../public/images/lottery-balls.jpg';
 
 const promotionalBanners = [
   { text: "Free Shipping on Orders Over $50!", icon: FaShippingFast },
@@ -18,6 +19,7 @@ const featuredProducts = [
   { name: "Premium Car Wax", price: "$29.99", image: "path/to/image1.jpg" },
   { name: "Interior Cleaner", price: "$19.99", image: "path/to/image2.jpg" },
   { name: "Microfiber Towels", price: "$9.99", image: "path/to/image3.jpg" },
+  { name: "Lottery Balls", price: "$0.99", image: lotteryBallsImage },
 ];
 
 const recentPurchases = [
