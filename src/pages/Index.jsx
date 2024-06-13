@@ -8,10 +8,10 @@ const promotionalBanners = [
 ];
 
 const productCategories = [
-  { name: "Exterior Products", link: "#" },
-  { name: "Interior Products", link: "#" },
-  { name: "Car Towels", link: "#" },
-  { name: "Best Sellers", link: "#" },
+  { name: "Exterior Products", link: "/exterior-products" },
+  { name: "Interior Products", link: "/interior-products" },
+  { name: "Car Towels", link: "/car-towels" },
+  { name: "Best Sellers", link: "/best-sellers" },
 ];
 
 const featuredProducts = [
